@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JMS Books</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/4fc85b0bf1.js" crossorigin="anonymous"></script>
+        
+        <script type = "text/javascript" src="shop.js" defer></script>
+    </head>
+    <body>
+
+        <nav id= "navBar">
+            <div class = "navigation">
+                <span class = "nav-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+
+                <p class = "siteName"><img src = "images/inkpx-word-art.png" alt = "JMS Books"></p>
+                <div class = "cartButton">
+                    <span class = "nav-icon">
+                        <i class="fa-solid fa-cart-shopping" id = "cart"></i>                   
+                    </span>
+                    <div class = "cartItems">0</div>
+                </div>
+            </div>
+        </nav>
+        <div class = "searchArea">
+                <input type="text" class="bookBox" name="bookName" placeholder="Search...">
+                <div class = "search-icon">
+                    <span class = "nav-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class = randomIcon>
+                    <span class = "randomItemBtn nav-icon">
+                        <i class="fa-solid fa-dice-d20"></i>
+                        <span class = "tooltiptext">Surprise Me!</span>
+                    </span>                
+                </div>
+
+        </div>
+        <main>
+            <div class = "title">
+                <h1>Books</h1> 
+            </div>
+            <div class = "productPlacement" id = "area">
+                <!--Stuff goes here...-->
+            </div>
+            <div class = "cartPanel">
+                <div class = "cart">
+                    <span class = "closeCart">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </span>
+                    <h2>Your Cart:</h2>
+                    <div class = "cartContents">
+                        <!--Stuff to buy goes here-->
+                    </div>
+                    <div class = "cartFooter">
+                        <h3>Total Price: $<span class = cartTotal>0.00</span></h3>
+                        <button class = "clearCart cartPanelButton">Empty Cart</button>
+                        <br>
+                        <br>
+                        <button class = "placeOrder cartPanelButton">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>JMS Books: Not a real book store!</footer>
+    </body>
+</html>
