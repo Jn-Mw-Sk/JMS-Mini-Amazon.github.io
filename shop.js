@@ -302,6 +302,8 @@ document.addEventListener("DOMContentLoaded", ()=>{ //everything starts here
 
 
 // Gets a description for a book
+// Descriptions added here because in original assignment we were not allowed to modify JSON file
+// Will most likely change this as this is seperate from project
 function getDescription(id){
   switch(id){
     case "1":
