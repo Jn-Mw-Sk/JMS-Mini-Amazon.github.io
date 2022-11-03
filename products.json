@@ -5,7 +5,7 @@
         "fields": {
           "title": "Fablehaven",
           "price": 7.99,
-          "image": { "fields": { "file": { "url": "/images/fable1.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/fable1.jpg" } } }
         }
       },
       {
@@ -13,7 +13,7 @@
         "fields": {
           "title": "Fablehaven: Rise of the Evening Star",
           "price": 7.99,
-          "image": { "fields": { "file": { "url": "/images/fable2.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/fable2.jpg" } } }
         }
       },
       {
@@ -21,7 +21,7 @@
         "fields": {
           "title": "Fablehaven: Grip of the Shadow Plague",
           "price": 7.99,
-          "image": { "fields": { "file": { "url": "/images/fable3.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/fable3.jpg" } } }
         }
       },
       {
@@ -29,7 +29,7 @@
         "fields": {
           "title": "Fablehaven: Secrets of the Dragon Sanctuary",
           "price": 7.99,
-          "image": { "fields": { "file": { "url": "/images/fable4.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/fable4.jpg" } } }
         }
       },
       {
@@ -37,7 +37,7 @@
         "fields": {
           "title": "Fablehaven: Keys to the Demon Prison",
           "price": 7.99,
-          "image": { "fields": { "file": { "url": "/images/fable5.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/fable5.jpg" } } }
         }
       },
       {
@@ -45,7 +45,7 @@
         "fields": {
           "title": "Python Crash Course",
           "price": 19.99,
-          "image": { "fields": { "file": { "url": "/images/pythonCC.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/pythonCC.jpg" } } }
         }
       },
       {
@@ -53,7 +53,7 @@
         "fields": {
           "title": "The Way of Kings",
           "price": 15.99,
-          "image": { "fields": { "file": { "url": "/images/tWoK.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/tWoK.jpg" } } }
         }
       },
       {
@@ -61,7 +61,7 @@
         "fields": {
           "title": "Hero's Feast: The Official D&D Cookbook",
           "price": 24.99,
-          "image": { "fields": { "file": { "url": "/images/hf5e.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/hf5e.jpg" } } }
         }
       },
       {
@@ -69,7 +69,7 @@
         "fields": {
           "title": "Dungeons and Dragons Player's Handbook",
           "price": 39.99,
-          "image": { "fields": { "file": { "url": "/images/dndphb.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/dndphb.jpg" } } }
         }
       },
       {
@@ -77,7 +77,7 @@
         "fields": {
           "title": "Dungeons and Dragons Dungeon Master's Guide",
           "price": 39.99,
-          "image": { "fields": { "file": { "url": "/images/dmguide.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/dmguide.jpg" } } }
         }
       },
       {
@@ -85,7 +85,7 @@
         "fields": {
           "title": "Dungeons and Dragons Monster Manual",
           "price": 39.99,
-          "image": { "fields": { "file": { "url": "/images/dndmm.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/dndmm.jpg" } } }
         }
       },
       {
@@ -93,7 +93,7 @@
         "fields": {
           "title": "Wizard's First Rule",
           "price": 9.99,
-          "image": { "fields": { "file": { "url": "/images/wfr.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/wfr.jpg" } } }
         }
       },
       {
@@ -101,7 +101,7 @@
         "fields": {
           "title": "Clean Code: A Handbook of Agile Softwware Craftsmanship",
           "price": 49.99,
-          "image": { "fields": { "file": { "url": "/images/cc.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/cc.jpg" } } }
         }
       },
       {
@@ -109,7 +109,7 @@
         "fields": {
           "title": "Monster Hunter International",
           "price": 9.99,
-          "image": { "fields": { "file": { "url": "/images/MHI.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/MHI.jpg" } } }
         }
       },
       {
@@ -117,7 +117,7 @@
         "fields": {
           "title": "Monster Hunter Vendetta",
           "price": 9.99,
-          "image": { "fields": { "file": { "url": "/images/MHV.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/MHV.jpg" } } }
         }
       },
       {
@@ -125,7 +125,7 @@
         "fields": {
           "title": "Monster Hunter Alpha",
           "price": 9.99,
-          "image": { "fields": { "file": { "url": "/images/MHA.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/MHA.jpg" } } }
         }
       },
       {
@@ -133,7 +133,7 @@
         "fields": {
           "title": "Monster Hunter Legion",
           "price": 9.99,
-          "image": { "fields": { "file": { "url": "/images/MHL.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/MHL.jpg" } } }
         }
       },
       {
@@ -141,7 +141,7 @@
         "fields": {
           "title": "Out From Boneville",
           "price": 9.99,
-          "image": { "fields": { "file": { "url": "/images/bone.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/bone.jpg" } } }
         }
       },
       {
@@ -149,7 +149,7 @@
         "fields": {
           "title": "Javascript and JQuery: Interactive Front-End Web Development",
           "price": 19.99,
-          "image": { "fields": { "file": { "url": "/images/jsnjq.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/jsnjq.jpg" } } }
         }
       },
       {
@@ -157,7 +157,7 @@
         "fields": {
           "title": "The Game Master's Book of Random Encounters",
           "price": 22.99,
-          "image": { "fields": { "file": { "url": "/images/gmbore.jpg" } } }
+          "image": { "fields": { "file": { "url": "images/gmbore.jpg" } } }
         }
       }
     ]
