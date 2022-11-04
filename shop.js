@@ -1,6 +1,7 @@
 //DOM Variable Setting
 const productsDOM = document.querySelector('.productPlacement'); // th area where the books are displayed
 const searchBar = document.querySelector('.bookBox'); // the search bar
+const searchButton = document.querySelector('.searchIcon'); // the search button
 const cartOverlay = document.querySelector('.cartPanel'); // an area rpresenting the cart
 const cartBtn = document.querySelector('.cartButton'); // a button to show thee cart
 const cartItems = document.querySelector('.cartItems'); //number of cart items
@@ -247,6 +248,7 @@ class UI{
     cart.forEach(item => this.addCartItem(item));
     cartBtn.addEventListener('click', this.showCart);
     closeCartBtn.addEventListener('click', this.hideCart);
+    searchButton.addEventListener('click', this.displayPriceLessEqual(searchBar.value));
     randomItem.addEventListener('click', (e)=>{
       let randId = Math.floor(Math.random() * 20) + 1;
       this.displayARandomItem(randId);
@@ -302,8 +304,6 @@ document.addEventListener("DOMContentLoaded", ()=>{ //everything starts here
 
 
 // Gets a description for a book
-// Descriptions added here because in original assignment we were not allowed to modify JSON file
-// Will most likely change this as this is seperate from project
 function getDescription(id){
   switch(id){
     case "1":
