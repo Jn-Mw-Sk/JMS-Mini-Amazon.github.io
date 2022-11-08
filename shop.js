@@ -11,6 +11,7 @@ const placeOrderBtn = document.querySelector('.placeOrder'); // a button to plac
 const cartContents = document.querySelector('.cartContents'); // a list of hte contents of the cart
 const totalPrice = document.querySelector('.cartTotal'); // total price of iteems in the cart
 const randomItem = document.querySelector('.randomIcon'); // a button to display a random item not in the cart
+const displayAllButton = document.querySelector('.showAll'); // a button to show all items
 
 let cart = [];
 
@@ -39,7 +40,10 @@ class Products{
 
 class UI{
    displayMain(){
-        document.getElementById("area").style.maxWidth = '1170px';
+      while(productsDOM.firstChild){
+        productsDOM.removeChild(productsDOM.firstChild);
+      }
+      document.getElementById("area").style.maxWidth = '1170px';
        let products = JSON.parse(localStorage.getItem('products'));
        products.forEach(item =>{
            const article = document.createElement('article'); 
@@ -85,14 +89,15 @@ class UI{
       })
     }
    
-   displayPriceLessEqual(maxPrice){
-        document.getElementById("area").style.maxWidth = '1170px';
+   displayPriceLessOrTitle(specifier){
+        document.getElementById("area").style.maxWidth = '350px';
         while(productsDOM.firstChild){
           productsDOM.removeChild(productsDOM.firstChild);
         }
         let products = JSON.parse(localStorage.getItem('products'));
         products.forEach(item =>{
-          if(parseFloat(item.price) <= parseFloat(maxPrice)){
+          let bookTitle = item.title;
+          if(parseFloat(item.price) <= parseFloat(specifier) || bookTitle.toUpperCase().includes(specifier.toUpperCase())){
             const article = document.createElement('article'); 
             article.classList.add('product');   
             article.innerHTML = `
@@ -134,7 +139,7 @@ class UI{
          event.target.innerText = "In Cart";
          event.target.disabled = true;
          let cartItem = {...Storage.getProduct(id), amount: 1};   
-         cart = [...cart, cartItem]; //...cart means everything we had in cart
+         cart = [...cart, cartItem]; 
          Storage.saveCart(cart);
          this.setCartValues(cart);
          this.addCartItem(cartItem)
@@ -248,7 +253,10 @@ class UI{
     cart.forEach(item => this.addCartItem(item));
     cartBtn.addEventListener('click', this.showCart);
     closeCartBtn.addEventListener('click', this.hideCart);
-    searchButton.addEventListener('click', this.displayPriceLessEqual(searchBar.value));
+    displayAllButton.addEventListener('click', (e)=>{
+      this.displayMain();
+    });
+    //searchButton.addEventListener('click', this.displayPriceLessEqual(searchBar.value));
     randomItem.addEventListener('click', (e)=>{
       let randId = Math.floor(Math.random() * 20) + 1;
       this.displayARandomItem(randId);
@@ -295,9 +303,16 @@ document.addEventListener("DOMContentLoaded", ()=>{ //everything starts here
       if(e.keyCode === 13)
       {
           let maxPrice = e.target.value;
-          ui.displayPriceLessEqual(maxPrice);
+          ui.displayPriceLessOrTitle(maxPrice);
           ui.getCartButtons();
+        }
       }
+    );
+
+    document.getElementById("search").addEventListener('click', (e)=>{
+      let maxPrice = searchBar.value;
+      ui.displayPriceLessOrTitle(maxPrice);
+      ui.getCartButtons();
     });
 })
 
