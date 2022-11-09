@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center;
     height:100%;
+    width: auto;
   }
 
   header {
