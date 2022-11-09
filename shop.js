@@ -255,6 +255,7 @@ class UI{
     closeCartBtn.addEventListener('click', this.hideCart);
     displayAllButton.addEventListener('click', (e)=>{
       this.displayMain();
+      this.getCartButtons();
     });
     //searchButton.addEventListener('click', this.displayPriceLessEqual(searchBar.value));
     randomItem.addEventListener('click', (e)=>{
